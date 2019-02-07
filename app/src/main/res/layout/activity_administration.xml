@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:padding="5dp"
+    tools:context="com.blogspot.hikmahtech.coeguide.Administration">
+    <ScrollView
+        android:id="@+id/card_scrollview"
+        android:layout_width="match_parent"
+        android:fadeScrollbars="true"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                cardview:cardUseCompatPadding="true"
+                android:layout_gravity="center_horizontal"
+                cardview:cardElevation="4dp"
+                cardview:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="top"
+                    android:background="@drawable/banner"
+                    android:orientation="vertical"
+                    android:padding="8dp"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#39fc03"
+                        android:textSize="24sp"
+                        android:layout_marginTop="29sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="college administration"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

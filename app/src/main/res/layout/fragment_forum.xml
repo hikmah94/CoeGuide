@@ -1,0 +1,31 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f7f7f7"
+    tools:context="com.blogspot.hikmahtech.coeguide.Forum">
+
+    <ImageView
+        android:id="@+id/mx"
+        android:background="@drawable/error"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_height="400dp"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webViewforum"
+        android:layout_gravity="center" />
+    <ProgressBar android:id="@+id/progressbar_forum"
+        android:background="@drawable/pbar"
+        android:padding="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
